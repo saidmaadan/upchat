@@ -47,10 +47,13 @@
         <variable name="XWALK_MULTIPLEAPK" value="true" />
     </plugin>
     <plugin name="cordova-plugin-wkwebview-engine" spec="https://github.com/driftyco/cordova-plugin-wkwebview-engine.git" />
-    <allow-navigation href="http://ionic.local/*"/>
+    <allow-navigation href="http://ionic.local/*" />
     <feature name="CDVWKWebViewEngine">
-      <param name="ios-package" value="CDVWKWebViewEngine" />
+        <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
-
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <plugin name="cordova-plugin-facebook4" spec="~1.7.4">
+        <variable name="APP_ID" value="1248300935239754" />
+        <variable name="APP_NAME" value="5d8bd7399f3ea8ac37fb6c7c41308793" />
+    </plugin>
 </widget>
