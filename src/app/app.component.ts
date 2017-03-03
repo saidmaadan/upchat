@@ -35,6 +35,14 @@ export class MyApp {
   }
 
   logout(): void{
+    this.menu.close();
+    this.menu.enable(false);
+    this.nav.setRoot(LoginPage);
+
+    this.dataService.fbid = null;
+    this.dataService.username = null;
+    this.dataService.picture = null;
+
 
   }
 }
